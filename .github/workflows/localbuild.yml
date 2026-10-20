@@ -8,7 +8,8 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    #runs-on: ubuntu-24.04
+    runs-on: self-hosted
     env:
       # Pinned: the errors check below depends on the qa.json layout of this version.
       PUBLISHER_VERSION: 3.0.0
