@@ -83,10 +83,10 @@ jobs:
           path: ~/.fhir/packages
           key: fhir-packages-${{ runner.os }}-${{ env.PUBLISHER_VERSION }}-${{ env.PUBLISHER_SHA256 }}-${{ env.VALIDATOR_VERSION }}-${{ env.VALIDATOR_SHA256 }}-${{ steps.pkgkey.outputs.deps }}-${{ hashFiles('.github/fhir-packages.lock', '.github/scripts/install-*.sh') }}
 
-      # Not taken from the cache: SUSHI must see the package as a build without cache does, and
-      # the Backport workaround below installs it again, checked, after SUSHI.
-      - name: Drop cached Backport package
-        run: rm -rf "$HOME/.fhir/packages/hl7.fhir.uv.subscriptions-backport.r4#1.1.0"
+      ## Not taken from the cache: SUSHI must see the package as a build without cache does, and
+      ## the Backport workaround below installs it again, checked, after SUSHI.
+      #- name: Drop cached Backport package
+      #  run: rm -rf "$HOME/.fhir/packages/hl7.fhir.uv.subscriptions-backport.r4#1.1.0"
 
       # nl.twiin.fhir.r4.notifications is not on the FHIR
       # package registry. The script downloads them, checks the pinned sha-256 (fails on a
