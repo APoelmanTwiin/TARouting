@@ -1,0 +1,31 @@
+id: nl.twiin.fhir.r4.routing
+canonical: https://fhir.twiin.nl/ig/routing
+name: TwiinRouting
+title: Twiin Routing
+description: Technical specification of TA Routing, part of the technical core of the Twiin Afsprakenstelsel.
+status: draft
+version: 0.4.0-draft
+fhirVersion: 4.0.1
+publisher:
+  name: Twiin
+license: CC-BY-SA-4.0
+copyrightYear: 2026+
+copyright: Copyright 2026 Twiin. Licensed under CC BY-SA 4.0.
+language: en
+releaseLabel: "Draft – normative only when referenced by the Twiin afsprakenstelsel"
+
+dependencies:
+
+parameters:
+  pin-canonicals: pin-multiples
+
+pages:
+  index.md:
+    title: Home
+  artifacts-overview.md:
+    title: Artifacts overview
+  
+menu:
+  Home: index.html
+  Overview: artifacts-overview.html
+  Artifacts: artifacts.html
