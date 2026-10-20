@@ -106,9 +106,9 @@ jobs:
           fi
           echo "${PUBLISHER_SHA256}  input-cache/publisher.jar" | shasum -a 256 -c -
 
-      # The package comes in through hl7.fhir.uv.cow and nl.twiin.fhir.r4.notifications. See known-issues.md.
-      - name: Work around empty index of Backport package
-        run: .github/scripts/install-backport.sh
+      ## The package comes in through hl7.fhir.uv.cow and nl.twiin.fhir.r4.notifications. See known-issues.md.
+      #- name: Work around empty index of Backport package
+      #  run: .github/scripts/install-backport.sh
 
       # Not in the package cache of the registry: the template is the asset of a release of
       # TwiinNL/ig-template. Always installed from a fresh download with its sha-256 checked, so
