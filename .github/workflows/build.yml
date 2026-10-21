@@ -1,4 +1,4 @@
-name: Build IG local
+name: Build IG
 
 on:
   pull_request:
