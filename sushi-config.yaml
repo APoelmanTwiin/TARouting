@@ -4,7 +4,7 @@ name: TwiinRouting
 title: Twiin Routing
 description: Technical specification of TA Routing, part of the technical core of the Twiin Afsprakenstelsel.
 status: draft
-version: 0.4.0-draft
+version: 0.3.0
 fhirVersion: 4.0.1
 publisher:
   name: Twiin
@@ -15,6 +15,7 @@ language: en
 releaseLabel: "Draft – normative only when referenced by the Twiin afsprakenstelsel"
 
 dependencies:
+  nictiz.fhir.nl.r4.nl-core: 0.12.0-beta.4
 
 parameters:
   pin-canonicals: pin-multiples
@@ -22,10 +23,7 @@ parameters:
 pages:
   index.md:
     title: Home
-  artifacts-overview.md:
-    title: Artifacts overview
   
 menu:
   Home: index.html
-  Overview: artifacts-overview.html
   Artifacts: artifacts.html

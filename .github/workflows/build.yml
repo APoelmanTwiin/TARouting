@@ -1,15 +1,16 @@
 name: Build IG local
 
 on:
-  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
     
 permissions:
   contents: read
 
 jobs:
   build:
-    #runs-on: ubuntu-24.04
-    runs-on: self-hosted
+    runs-on: ubuntu-24.04
     env:
       # Pinned: the errors check below depends on the qa.json layout of this version.
       PUBLISHER_VERSION: 3.0.0
@@ -83,17 +84,6 @@ jobs:
           path: ~/.fhir/packages
           key: fhir-packages-${{ runner.os }}-${{ env.PUBLISHER_VERSION }}-${{ env.PUBLISHER_SHA256 }}-${{ env.VALIDATOR_VERSION }}-${{ env.VALIDATOR_SHA256 }}-${{ steps.pkgkey.outputs.deps }}-${{ hashFiles('.github/fhir-packages.lock', '.github/scripts/install-*.sh') }}
 
-      ## Not taken from the cache: SUSHI must see the package as a build without cache does, and
-      ## the Backport workaround below installs it again, checked, after SUSHI.
-      #- name: Drop cached Backport package
-      #  run: rm -rf "$HOME/.fhir/packages/hl7.fhir.uv.subscriptions-backport.r4#1.1.0"
-
-      # nl.twiin.fhir.r4.notifications is not on the FHIR
-      # package registry. The script downloads them, checks the pinned sha-256 (fails on a
-      # mismatch) and puts them in the package cache, replacing a restored copy. See known-issues.md.
-      - name: Install packages not on the registry
-        run: .github/scripts/install-packages.sh
-
       - name: Run SUSHI
         run: sushi build .
 
@@ -106,10 +96,7 @@ jobs:
           fi
           echo "${PUBLISHER_SHA256}  input-cache/publisher.jar" | shasum -a 256 -c -
 
-      ## The package comes in through hl7.fhir.uv.cow and nl.twiin.fhir.r4.notifications. See known-issues.md.
-      #- name: Work around empty index of Backport package
-      #  run: .github/scripts/install-backport.sh
-
+      
       # Not in the package cache of the registry: the template is the asset of a release of
       # TwiinNL/ig-template. Always installed from a fresh download with its sha-256 checked, so
       # a restored cache entry is replaced, not trusted.
