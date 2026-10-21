@@ -12,3 +12,5 @@ HealthcareService/ad3-hs2: HealthcareService.type[1]: Error from https://tx.fhir
 HealthcareService/ad3-hs2: HealthcareService.type[2]: Error from https://tx.fhir.org/r4: Error: The filter "concept in 41000147108" is not understood or supported
 HealthcareService/ad3-hs2: HealthcareService.type[3]: Error from https://tx.fhir.org/r4: Error: The filter "concept in 41000147108" is not understood or supported
 ServiceRequest/53a41e63-e826-45fa-9076-9be4b18399c8: ServiceRequest.code: Error from https://tx.fhir.org/r4: Error: The filter "concept in 41000147108" is not understood or supported
+Publication Request: This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot'
+Publication Request: This release is not labelled as a milestone or technical correction, so should have a patch version (0.3.0)

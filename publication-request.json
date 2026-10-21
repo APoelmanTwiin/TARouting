@@ -8,6 +8,7 @@
   "desc": "Fourth draft publication, technical specification of TA Routing 0.3, in the Twiin house style",
   "first": true,
   "title": "Twiin Routing",
+  "category": "TBD",
   "introduction": "Technical specification of TA Routing, part of the technical core of the Twiin Afsprakenstelsel.",
   "ci-build": "https://github.com/APoelmanTwiin/TARouting/actions",
   "registry-description": "Technical specification of TA Routing, part of the technical core of the Twiin Afsprakenstelsel.",
