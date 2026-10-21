@@ -1,0 +1,11 @@
+output/
+temp/
+fsh-generated/
+input-cache/
+Requirements-fromNarrative.json
+_build.bat
+_build.sh
+_gencontinuous.bat
+_gencontinuous.sh
+template/
+.github/scripts/__pycache__/
