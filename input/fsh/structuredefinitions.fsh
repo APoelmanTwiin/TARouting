@@ -21,7 +21,7 @@ Id: nl-gf-healthcareservice
 Title: "NL Generic Functions HealthcareService Profile"
 Description: "The technical details of a healthcare service that can be used in referrals, requests and orders"
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "assigner.identifier.type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier contains
     AssignedId 1..1
@@ -50,7 +50,7 @@ Id: nl-gf-location
 Title: "NL Generic Functions Location Profile"
 Description: "Physical location details for healthcare services, organizations, and practitioners."
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "assigner.identifier.type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier contains
     AssignedId 1..1
