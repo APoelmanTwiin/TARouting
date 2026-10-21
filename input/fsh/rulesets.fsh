@@ -5,7 +5,7 @@ RuleSet: Expectation( conformance )
   * valueCode = #{conformance}
   
 RuleSet: BundleEntryPUT (type, resource)
-* entry[+].fullUrl = "urn:uuid:{resource}"
+* entry[+].fullUrl = "https://example.org/fhir/{type}/{resource}"
 * entry[=].resource = {resource}
 * entry[=].request.method = #PUT
 * entry[=].request.url = "{type}/{resource}"
