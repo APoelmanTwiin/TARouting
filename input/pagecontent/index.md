@@ -103,7 +103,7 @@ Either the `HealthcareService.endpoint` or `ActivityDefinition.endpoint` must co
 
 
 #### HealthcareService profile
-The [HealthcareService-profile](https://build.fhir.org/ig/nuts-foundation/nl-generic-functions-ig/StructureDefinition-nl-gf-healthcareservice.html) is based on the core FHIR R4 HealthcareService, incorporating changes from IHE mCSD and adding extra constraints for the Dutch realm: 
+The [HealthcareService-profile](./StructureDefinition-nl-gf-healthcareservice.html) is based on the core FHIR R4 HealthcareService, incorporating changes from IHE mCSD and adding extra constraints for the Dutch realm:
 - requirement for .providedBy 
 - valueset binding of .type 
 - extension:supportedActivityDefinitions 
@@ -119,13 +119,13 @@ These references SHOULD also include an Author-assigned-identifier (required in 
 
 
 ```
-<extension url="http://nuts-foundation.github.io/nl-generic-functions-ig/StructureDefinition/task-stu3-healthcareservice">
+<extension url="https://fhir.twiin.nl/ig/routing/StructureDefinition/task-stu3-healthcareservice">
     <valueReference>
         <reference value="HealthcareService/b48826dc-2d58-479a-bfd3-80b7a9d69757" />
         <display value="Organization 3 - HealthcareService Verpleging"/>
     </valueReference>
 </extension>
-<extension url="http://nuts-foundation.github.io/nl-generic-functions-ig/StructureDefinition/task-stu3-location">
+<extension url="https://fhir.twiin.nl/ig/routing/StructureDefinition/task-stu3-location">
     <valueReference>
         <reference value="Location/9a2b8f1c-4e7d-42a1-b3c9-2d5e8f7a6c1b" />
         <display value="Organization 3 - Location Nursing Department"/>

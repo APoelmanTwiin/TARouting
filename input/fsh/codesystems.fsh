@@ -2,12 +2,12 @@ CodeSystem: NlGfDataExchangeCapabilitiesCS
 Id: nl-gf-data-exchange-capabilities
 Title: "NL GF Data exchange capabilities"
 Description: "Local code system for NL Generic Functions."
-* ^url = "http://nuts-foundation.github.io/nl-generic-functions-ig/CodeSystem/nl-gf-data-exchange-capabilities"
+* ^url = "https://fhir.twiin.nl/ig/routing/CodeSystem/nl-gf-data-exchange-capabilities"
 * ^status = #active
 * ^experimental = true
-* #http://nuts-foundation.github.io/nl-generic-functions-ig/CapabilityStatement/nl-gf-admin-directory-update-client "Care Services Directory for Update Client"
-* #http://nuts-foundation.github.io/nl-generic-functions-ig/CapabilityStatement/nl-gf-query-directory-query-client "Care Services Directory for Query Client"
-* #http://nuts-foundation.github.io/nl-generic-functions-ig/CapabilityStatement/nl-gf-query-directory-query-client-reads "Care Services Directory for Query Client for only Read operations"
+* #https://fhir.twiin.nl/ig/routing/CapabilityStatement/nl-gf-admin-directory-update-client "Care Services Directory for Update Client"
+* #https://fhir.twiin.nl/ig/routing/CapabilityStatement/nl-gf-query-directory-query-client "Care Services Directory for Query Client"
+* #https://fhir.twiin.nl/ig/routing/CapabilityStatement/nl-gf-query-directory-query-client-reads "Care Services Directory for Query Client for only Read operations"
 * #https://api.iknl.nl/docs/pzp/r4/CapabilityStatement/ACP-CapabilityStatementProvider "ACP IKNL PZP Capability Statement Provider"
 * #eOverdracht-notification "Transfer of Care - eOverdracht Notification"
 * #Twiin-TA-notification "Twiin - TA Notification"
@@ -34,7 +34,7 @@ CodeSystem: NlGfWlzZorgprofielenCS
 Id: nl-gf-wlz-zorgprofielen-cs
 Title: "NL GF WLZ Zorgprofielen CodeSystem"
 Description: "Local code system for NL Generic Functions WLZ Zorgprofielen."
-* ^url = "http://nuts-foundation.github.io/nl-generic-functions-ig/CodeSystem/nl-gf-wlz-zorgprofielen-cs"
+* ^url = "https://fhir.twiin.nl/ig/routing/CodeSystem/nl-gf-wlz-zorgprofielen-cs"
 * ^status = #active
 * ^experimental = true
 * #4VV "VV Beschut wonen met intensieve begeleiding en uitgebreide verzorging" "Pgb mogelijk"

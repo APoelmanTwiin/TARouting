@@ -1,12 +1,15 @@
 {
   "package-id": "nl.twiin.fhir.r4.routing",
-  "version": "0.3.0-draft",
+  "version": "0.3.0",
   "mode": "working",
   "status": "draft",
   "sequence": "Release 1",
-  "path": "http://localhost:8000/ig/routing/0.3.0-draft",
+  "path": "https://fhir.twiin.nl/ig/routing/0.3.0",
   "desc": "Fourth draft publication, technical specification of TA Routing 0.3, in the Twiin house style",
-  "first": false,
+  "first": true,
+  "title": "Twiin Routing",
+  "introduction": "Technical specification of TA Routing, part of the technical core of the Twiin Afsprakenstelsel.",
+  "ci-build": "https://github.com/APoelmanTwiin/TARouting/actions",
   "registry-description": "Technical specification of TA Routing, part of the technical core of the Twiin Afsprakenstelsel.",
   "registry-country": "nl",
   "registry-authority": "Twiin"

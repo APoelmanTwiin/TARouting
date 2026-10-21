@@ -3,12 +3,12 @@
   "id" : "2427ca0c-8a29-4a6a-aabd-50cf02f587a7",
   "meta" : {
     "profile" : [
-       "http://nuts-foundation.github.io/nl-generic-functions-ig/StructureDefinition/nl-gf-endpoint"
+       "https://fhir.twiin.nl/ig/routing/StructureDefinition/nl-gf-endpoint"
     ]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Endpoint 2427ca0c-8a29-4a6a-aabd-50cf02f587a7</b></p><a name=\"2427ca0c-8a29-4a6a-aabd-50cf02f587a7\"> </a><a name=\"hc2427ca0c-8a29-4a6a-aabd-50cf02f587a7\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-gf-endpoint.html\">NL Generic Functions Endpoint Profile</a></p></div><p><b>identifier</b>: <code>https://cp2-test.example.org/api</code>/2427ca0c-8a29-4a6a-aabd-50cf02f587a7</p><p><b>status</b>: Active</p><p><b>connectionType</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest\">Endpoint Connection Type: hl7-fhir-rest</a> (HL7 FHIR)</p><p><b>name</b>: FHIR STU3 Endpoint</p><p><b>managingOrganization</b>: Identifier: <code>http://fhir.nl/fhir/NamingSystem/kvk</code>/08013836</p><p><b>contact</b>: <a href=\"tel:+3131599991\">+3131599991</a>, <a href=\"mailto:info@nedap.example.org\">info@nedap.example.org</a></p><p><b>payloadType</b>: <span title=\"Codes:{http://nuts-foundation.github.io/nl-generic-functions-ig/CodeSystem/nl-gf-data-exchange-capabilities http://nictiz.nl/fhir/CapabilityStatement/eOverdracht-servercapabilities}\">Transfer of Care - eOverdracht Server</span></p><p><b>payloadMimeType</b>: application/fhir+json</p><p><b>address</b>: <a href=\"https://simplifier.net/resolve?scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4&amp;canonical=https://cp2-test.example.org/fhirstu3\">https://cp2-test.example.org/fhirstu3</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Endpoint 2427ca0c-8a29-4a6a-aabd-50cf02f587a7</b></p><a name=\"2427ca0c-8a29-4a6a-aabd-50cf02f587a7\"> </a><a name=\"hc2427ca0c-8a29-4a6a-aabd-50cf02f587a7\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-nl-gf-endpoint.html\">NL Generic Functions Endpoint Profile</a></p></div><p><b>identifier</b>: <code>https://cp2-test.example.org/api</code>/2427ca0c-8a29-4a6a-aabd-50cf02f587a7</p><p><b>status</b>: Active</p><p><b>connectionType</b>: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest\">Endpoint Connection Type: hl7-fhir-rest</a> (HL7 FHIR)</p><p><b>name</b>: FHIR STU3 Endpoint</p><p><b>managingOrganization</b>: Identifier: <code>http://fhir.nl/fhir/NamingSystem/kvk</code>/08013836</p><p><b>contact</b>: <a href=\"tel:+3131599991\">+3131599991</a>, <a href=\"mailto:info@nedap.example.org\">info@nedap.example.org</a></p><p><b>payloadType</b>: <span title=\"Codes:{https://fhir.twiin.nl/ig/routing/CodeSystem/nl-gf-data-exchange-capabilities http://nictiz.nl/fhir/CapabilityStatement/eOverdracht-servercapabilities}\">Transfer of Care - eOverdracht Server</span></p><p><b>payloadMimeType</b>: application/fhir+json</p><p><b>address</b>: <a href=\"https://simplifier.net/resolve?scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4&amp;canonical=https://cp2-test.example.org/fhirstu3\">https://cp2-test.example.org/fhirstu3</a></p></div>"
   },
   "identifier" : [
     {
@@ -58,7 +58,7 @@
     {
       "coding" : [
         {
-          "system" : "http://nuts-foundation.github.io/nl-generic-functions-ig/CodeSystem/nl-gf-data-exchange-capabilities",
+          "system" : "https://fhir.twiin.nl/ig/routing/CodeSystem/nl-gf-data-exchange-capabilities",
           "code" : "http://nictiz.nl/fhir/CapabilityStatement/eOverdracht-servercapabilities",
           "display" : "Transfer of Care - eOverdracht Server"
         }
