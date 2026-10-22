@@ -5,7 +5,7 @@
   "status": "draft",
   "sequence": "Release 1",
   "path": "https://fhir.twiin.nl/ig/routing/0.3.0",
-  "desc": "Fourth draft publication, technical specification of TA Routing 0.3, in the Twiin house style",
+  "desc": "Third draft publication, technical specification of TA Routing 0.3, in the Twiin house style",
   "first": true,
   "title": "Twiin Routing",
   "category": "TBD",
