@@ -462,7 +462,11 @@ Instance: 3e799075-63a2-4a4c-913d-a91b8198463d
 InstanceOf: NlcoreHealthcareProviderOrganization
 Usage: #example
 Title: "Organization 3- Organization"
-
+* identifier[+].system = "http://fhir.nl/fhir/NamingSystem/ura"
+* identifier[=].value = "33333333"
+* insert AuthorAssignedIdentifier("https://cp3-test.example.org/departments","3e799075-63a2-4a4c-913d-a91b8198463d","http://fhir.nl/fhir/NamingSystem/ura", "33333333")
+* name = "example Care Institution"
+* type[+] = $organization-type#X3 "Verplegings- of verzorgingsinstelling"
 
 Instance: 9a2b8f1c-4e7d-42a1-b3c9-2d5e8f7a6c1b
 InstanceOf: NlGfLocation
